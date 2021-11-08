@@ -5,13 +5,15 @@ body {
 
 h1 { font-size: 72px;
      color: #616057;}
-h2 { font-size: 28px;
+
+h2 { font-size: 40px;
       color: #616057}
-h3 { font-size: 20px;
-     color:#202020
-    style: light;}
+h3 { font-size: 22px;
+     color:#616057;
+}
 
 h4 { font-size: 18px;}
+
 p { 
     font-family: Avenir Light;
     font-size: 15px;
@@ -66,14 +68,15 @@ p {
 
   }
         .about-Img {
-            padding-left: 30px;
-            margin-left: 400px;     
+            margin-left: 400px;  
+            padding-top: 150px;
+            padding-bottom: 200px;   
  }
 
         .about-me {
         background-color: #F7F5EF;
         position: absolute;
-        top: 200px;
+        top: 350px;
         right: 500px;
         line-height: 2;
         order: 2;
@@ -82,6 +85,119 @@ p {
         width: 30%;
    
   }
+
+
+
+  /*My Project section*/
+  #row {
+    background-color: #F7F5EF;
+
+  
+
+  }
+  #myprojectsHeading{
+  color: #666;
+  margin: 0px 10px px;
+  padding: 150px 30px 0px 30px;
+  text-align: center;
+    
+  
+
+  }
+    .flex {   /*Parent Container for projectCard and flex items for Skills flex items*/
+       display: flex;
+       align-items: flex-start;
+       padding: 10px 70px;
+       justify-content: center;
+       
+
+  }
+
+        .projectCard {    /*flex items only for project*/
+  
+          margin: 70px 70px;
+          padding-bottom: 50px;
+          display: flex;
+          flex-direction: column;
+          width: 304px;  
+          
+        }
+             .projectImg { 
+               width: 304px; 
+               height: 228px; 
+               border: 1px solid black;
+
+               
+}
+            .projectText {
+              margin-top: 35px;
+            }
+
+button {
+  background-color: #F7F5EF;
+  color:black;
+  font-size: 16px;
+  width: 136px;
+  height: 44px;
+  padding: 8px;
+  Font-family: Lora;
+  box-sizing: border-box;
+  border: 1px solid black;
+  margin-top: 30px;
+}
+
+/*SKILL SECTION */
+
+.skillImg {
+  width: 114px;
+  height: 70px;
+  position: absolute;
+  right: 30%;
+top: -70px;
+
+}
+
+.handshakeImg {
+  width: 100x;
+  height: 50px;
+  position: absolute;
+  right: 35%;
+  top: -55px;
+
+}
+
+#skillsSection {
+  background-color: white;
+
+
+}
+#myskillsHeading {
+  text-align: center;
+  padding-top: 100px;
+  
+}
+
+.flex_item {
+
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  margin: 70px 70px;
+  padding-bottom: 50px;
+  width: 304px;  
+
+
+
+
+}
+
+
+
+
+
+
 
 
 
