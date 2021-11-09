@@ -23,115 +23,102 @@ p {
     background-color: #F0EBDE;
     padding: 15px;
   }
-  header ul {
-    float: right;
-    color: black;
-  }
 
   header li {
     display: inline-block;
     padding: 0px 5px;
+    position: relative; 
+    left: 40%;
+
   }
-  header p {
-    display: inline-block;
-  }
-  .heroImg {
+ 
+  
+  .heroImg {  /*top Section*/
     background-color: #F7F5EF;
-    padding: 100px 15px;
    display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 100px;
  
  }
 
-     .maggiePatel {
-         margin-left: 1000px;
+     .maggiePatel {  /*Image of Me*/
+         order: 1;
 }
   
-    .content {
-     position: absolute;
-     left: 500px;
-     width: 25%;
-    top: 260px;
+    .content {    /*Hello I'm Maggie Patel content*/
+     width: 35%;
     line-height: 1.3;
-  }
-
-     button {
-    padding: 15px;
-    background-color: #373738;
-    color: white;
-    font-size: 15px;
-    border-radius: 4px;
-  }
-
-  .about-me-container {
-      position: relative;
-      background-color:#F0EBDE
-
-  }
-        .about-Img {
-            margin-left: 400px;  
-            padding-top: 150px;
-            padding-bottom: 200px;   
- }
-
-        .about-me {
-        background-color: #F7F5EF;
-        position: absolute;
-        top: 350px;
-        right: 500px;
-        line-height: 2;
-        order: 2;
-        border: 1px solid black;
-        padding: 50px;
-        width: 30%;
-   
+  
   }
 
 
 
-  /*My Project section*/
-  #row {
+  /* ABOUT ME Section*/
+
+  #Container {
+    top: 0; 
+    left: 0; 
+    background-color: #F0EBDE;
+  }
+
+  .colorfulImg {
+position: relative; 
+top: 0;
+left: 20%;
+
+
+padding: 100px;
+
+  }
+
+  .AboutmeBox {
+    border: 1px solid black;
+    width: 30%;
+    position: absolute;
+    top: 1100px;
+    left: 40%;
+    background-color:#F7F5EF;
+    padding: 50px;
+
+  }
+
+  /*PROJECT SECTION*/
+  
+#row {
     background-color: #F7F5EF;
-
-  
-
-  }
-  #myprojectsHeading{
-  color: #666;
-  margin: 0px 10px px;
-  padding: 150px 30px 0px 30px;
-  text-align: center;
-    
-  
-
-  }
-    .flex {   /*Parent Container for projectCard and flex items for Skills flex items*/
-       display: flex;
-       align-items: flex-start;
-       padding: 10px 70px;
-       justify-content: center;
-       
-
-  }
-
-        .projectCard {    /*flex items only for project*/
-  
-          margin: 70px 70px;
-          padding-bottom: 50px;
-          display: flex;
-          flex-direction: column;
-          width: 304px;  
-          
-        }
-             .projectImg { 
-               width: 304px; 
-               height: 228px; 
-               border: 1px solid black;
-
-               
 }
-            .projectText {
-              margin-top: 35px;
-            }
+
+#myprojectsHeading{
+  color: #666;
+  padding-top: 75px;
+
+  text-align: center;
+}
+
+.flex {   /*Parent Container for projectCard and flex items for Skills flex items*/
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 70px;
+  justify-content: center;
+}
+
+  .projectCard {    /*flex items only for project*/
+     margin: 70px 70px;
+     padding-bottom: 50px;
+     display: flex;
+     flex-direction: column;
+     width: 304px;  
+    }
+
+      .projectImg { 
+        width: 304px; 
+        height: 228px; 
+        border: 1px solid black;
+      }
+         .projectText {
+            margin-top: 35px;
+          }
 
 button {
   background-color: #F7F5EF;
@@ -145,6 +132,13 @@ button {
   border: 1px solid black;
   margin-top: 30px;
 }
+
+button:hover {
+  background: #616057;
+  color: fff;
+}
+
+
 
 /*SKILL SECTION */
 
@@ -167,19 +161,16 @@ top: -70px;
 }
 
 #skillsSection {
-  background-color: white;
-
-
+  background-color: #F0EBDE;
 }
+
 #myskillsHeading {
   text-align: center;
-  padding-top: 100px;
-  
+  padding-top: 75px;  
+  padding-bottom: 50px;
 }
 
 .flex_item {
-
-
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -188,48 +179,150 @@ top: -70px;
   padding-bottom: 50px;
   width: 304px;  
 
-
-
-
 }
 
 
-
-
-
-
-
+/*FOOTER SECITON */
 
 
   footer {
     background-color: #F7F5EF;
-    padding: 5px;
+
     color: black;
   }
   footer ul {
     list-style: none;
-    padding-left: 5px;
+    padding-bottom: 50px;
+    text-align: center;
+
   }
+
   footer li {
     display: inline-block;
     padding: 0px 7px;
   }
-  .contactform {
-      display: flex;
+
+  #sendMemessageHeading { 
+    padding: 50px 370px;
+   
+
 
   }
-.form-row { 
-    padding: 10px 0;
+
+.contactform .form-row { 
+    padding-bottom: 15px;   
+    padding-left: 370px;
+    
+
+    
+}
+
+.contactform label {
+    display: block;
+     
+}
+
+.contactform input[type="text"], .contactform textarea{
+  padding: 8px;
+  width: 30%;
+ 
+}
+
+.contactform button { 
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  font-family: lora;
+  margin-left: 370px;
+}
+
+.contactform button:hover {
+  background-color: #616057;
+  color: #fff;
+  border: 1px solid #000;
+
+} 
+
+
+/*HELLO SECTION*/
+
+@media only screen and (max-width: 600px) {
+.heroImg {  /*top Section*/
+  background-color: #F7F5EF;
+  display: flex;
+    flex-direction: column;
+ width: 200%;
+ padding: 10px;
+
+
+}
+
+
+  @media only screen and (max-width: 600px) {
+  .maggiePatel {  /*Image of Me*/
+    padding: 50px;
+}
+
+
+
+
+
+/*ABOUT ME SECTION*/
+@media only screen and (max-width: 600px) {
+#Container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 200%;
+  padding: 10px;
+
+  background-color: #F0EBDE;
+}
+
+@media only screen and (max-width: 600px) {
+.colorfulImg {
+
+padding: 100px;
+
+}
+
+@media only screen and (max-width: 600px) {
+.AboutmeBox {
+  border: 1px solid black;
+  top: 1700px;
+ right: 700px;
+ margin: 5px;
+  background-color:#F7F5EF;
+  padding: 10px;
+  width: 70%;
+
+
+
+}
+
+/*PROJECT SECTION*/
+
+
+@media only screen and (max-width: 600px) {
+  .flex {   /*Parent Container for projectCard and flex items for Skills flex items*/
     display: flex;
-}
-.form-row label {
-    padding-right: 10px;
-    flex: 1;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.form-row input {
- flex: 5;
-}
+  @media only screen and (max-width: 600px) {
+  .projectCard {    /*flex items only for project*/
+    flex-direction: column;
+    align-items: center;
+   }
 
+   @media only screen and (max-width: 600px) { 
 
+     }
 
+     @media only screen and (max-width: 600px) { 
+   
